@@ -6,5 +6,5 @@ public class Constants {
     public static final int kRightFrontMotorID = 0;
     public static final int kRightRearMotorID = 2;
 
-    public static final int kJoystickPort = 0;
+    public static final int kJoystickPort = 2;
 }

@@ -13,20 +13,12 @@ import edu.wpi.first.wpilibj2.command.*;
 
 public class RobotContainer {
     // TODO: Explain what is happening here
-    private final Drivetrain drivetrain = new Drivetrain();
-    private final Joystick joystick = new Joystick(kJoystickPort);
+    
 
     public RobotContainer() {
         configureBindings();
         // TODO: Explain what is happening here
-        drivetrain.setDefaultCommand(
-            new RunCommand(
-                () -> drivetrain.drive(
-                        joystick.getY() * joystick.getThrottle(),
-                        joystick.getTwist() * joystick.getThrottle()
-                    )
-            )
-        );
+        
     }
 
     private void configureBindings() {
