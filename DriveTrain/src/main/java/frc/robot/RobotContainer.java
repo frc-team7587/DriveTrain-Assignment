@@ -4,7 +4,7 @@
 
 package frc.robot;
 
-import frc.robot.subsystems.*;
+import frc.robot.subsys.*;
 import static frc.robot.Constants.*;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -13,12 +13,15 @@ import edu.wpi.first.wpilibj2.command.*;
 
 public class RobotContainer {
     // TODO: Explain what is happening here
+    // It serves as the main hub for the robot's command structure
     
 
     public RobotContainer() {
         configureBindings();
         // TODO: Explain what is happening here
-        
+        // The constructor is where the robot's susbsystems, commands, and button bidnings are initialized
+        // and configured. The call to configureBindings(); suggests that the button bindings for controlling
+        // the robot will be set up in this method.
     }
 
     private void configureBindings() {
